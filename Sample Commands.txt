@@ -1,0 +1,22 @@
+Login to Command Line of Jump Box
+ssh studyclub@bitsio-gas-kig8uk-bsides22-ad-ldap-jumpbox.gas.bitsioservices.com
+1APQb9pwr3
+
+Login to Command Line of Splunk All in One Server
+ssh studyclub@10.4.5.163
+1APQb9pwr3
+
+Btool Commands
+/opt/splunk/bin/splunk cmd btool authorize list --debug | grep /local
+
+Needs to be run as user Splunk is running under. In this environment the user is named splunk
+sudo su splunk
+
+
+/opt/splunk/bin/splunk cmd btool authorize list --debug | grep /local
+/opt/splunk/bin/splunk cmd btool authorize list role_finance --debug | grep /local
+view /opt/splunk/etc/system/local/authorize.conf
+
+/opt/splunk/bin/splunk cmd btool authentication list --debug | grep /local
+/opt/splunk/bin/splunk cmd btool authentication list roleMap_a_studyclub --debug | grep /local
+view /opt/splunk/etc/system/local/authentication.conf
