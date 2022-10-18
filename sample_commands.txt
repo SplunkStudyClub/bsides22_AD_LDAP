@@ -1,4 +1,4 @@
-Please refer to the second email with the subject
+Please refer to the second email with the below subject for the Addresses and Credentials
 Your Global Academy for Splunk (GAS) environment for BSIDES SPL 22 is now ready, [nick name]
 
 Login to command line of Jump Box
